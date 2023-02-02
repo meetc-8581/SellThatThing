@@ -6,9 +6,15 @@ import {
   GestureHandlerRootView,
   Swipeable,
 } from "react-native-gesture-handler";
-import CustomGredient from "./CustomGredient/CustomGredient";
 
-function ListItem({ title, image, subTitle, onPress, renderRightActions }) {
+function ListItem({
+  title,
+  image,
+  subTitle,
+  IconComponent,
+  onPress,
+  renderRightActions,
+}) {
   return (
     <GestureHandlerRootView>
       <Swipeable renderRightActions={renderRightActions}>
@@ -17,10 +23,13 @@ function ListItem({ title, image, subTitle, onPress, renderRightActions }) {
           onPress={onPress}
         >
           <View style={styles.container}>
-            <Image source={image} style={styles.image} />
+            {IconComponent}
+            {image && <Image source={image} style={styles.image} />}
             <View style={styles.profile}>
               <AppText style={styles.title}>{title}</AppText>
-              <AppText style={styles.subTitle}>{subTitle}</AppText>
+              {subTitle && (
+                <AppText style={styles.subTitle}>{subTitle}</AppText>
+              )}
             </View>
           </View>
         </TouchableHighlight>
@@ -41,7 +50,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   profile: {
-    marginTop: 10,
+    marginLeft: 10,
+    justifyContent: "center",
   },
   title: {
     color: colors.primary,
@@ -49,7 +59,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   subTitle: {
-    color: colors.mediumGrey,
+    color: colors.secondary,
     fontSize: 15,
   },
 });

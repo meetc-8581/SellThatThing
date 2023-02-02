@@ -2,6 +2,8 @@ import { StyleSheet, View } from "react-native";
 import AppText from "./components/AppText/AppText";
 import Card from "./components/Card";
 import Icon from "./components/Icon";
+import ListItem from "./components/ListItem";
+import AccountScreen from "./screens/AccountScreen";
 import ListingDetailsScreen from "./screens/ListingDetailsScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import Screen from "./screens/Screen";
@@ -11,13 +13,11 @@ import WelcomeScreen from "./screens/WelcomeScreen";
 
 export default function App() {
   return (
-    // // <WelcomeScreen />
-    // // <View style={styles.container}>
-    //   {/* <View style={{backgroundColor}} */}
-    <Screen>
-      <Icon name="email" size={100} backgroundColor="red" iconColor="white" />
-    </Screen>
-    // </View>
+    // <WelcomeScreen />
+    // <MessagesScreen />
+    // <ListingDetailsScreen />
+    // <ViewImageScreen />
+    <AccountScreen />
   );
 }
 
@@ -46,6 +46,23 @@ const styles = StyleSheet.create({
   // let x = 1;
   // const handlePress = () => console.log("Text Pressed");
   // console.log(require("./assets/icon.png"));
+  // // <View style={styles.container}>
+  //   {/* <View style={{backgroundColor}} */}
+  // <Screen>
+  //   <ListItem
+  //     IconComponent={
+  //       <Icon
+  //         name="email"
+  //         size={50}
+  //         backgroundColor="red"
+  //         iconColor="white"
+  //       ></Icon>
+  //     }
+  //     title="Terminator"
+  //     subTitle="A great movie"
+  //   />
+  // </Screen>
+  // </View>
   /* <Text numberOfLines={5} onPress={handlePress}>
         Hello World! Open up App.js to start working on your app! Hello World!
         Open up App.js to start working on your app! Hello World! Open up App.js
