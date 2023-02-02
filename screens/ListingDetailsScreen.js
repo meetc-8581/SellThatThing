@@ -1,8 +1,8 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
-import AppText from "../components/AppText/AppText";
-import CustomGredient from "../components/CustomGredient/CustomGredient";
+import AppText from "../components/AppText";
+import CustomGredient from "../components/CustomGredient";
 import ListItem from "../components/ListItem";
 import colors from "../config/colors";
 

@@ -1,10 +1,13 @@
-import { StyleSheet, View } from "react-native";
-import AppText from "./components/AppText/AppText";
+import { useState } from "react";
+import { StyleSheet, TextInput, View } from "react-native";
+import AppText from "./components/AppText";
+import AppTextInput from "./components/AppTextInput";
 import Card from "./components/Card";
 import Icon from "./components/Icon";
 import ListItem from "./components/ListItem";
 import AccountScreen from "./screens/AccountScreen";
 import ListingDetailsScreen from "./screens/ListingDetailsScreen";
+import ListingScreen from "./screens/ListingScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import Screen from "./screens/Screen";
 import ViewImageScreen from "./screens/ViewImageScreen";
@@ -12,16 +15,27 @@ import ViewImageScreen from "./screens/ViewImageScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 
 export default function App() {
+  const [email, setEmail] = useState("");
   return (
+    <Screen>
+      <AppTextInput iconName="email" />
+    </Screen>
+
     // <WelcomeScreen />
     // <MessagesScreen />
     // <ListingDetailsScreen />
     // <ViewImageScreen />
-    <AccountScreen />
+    // <AccountScreen />
+    // <ListingScreen />
   );
 }
 
 const styles = StyleSheet.create({
+  input: {
+    borderBottomColor: "#ccc",
+    borderBottomWidth: 1,
+  },
+
   container: {
     flex: 1,
     // justifyContent: "center",

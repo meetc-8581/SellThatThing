@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, StyleSheet, View } from "react-native";
-import CustomGredient from "../components/CustomGredient/CustomGredient";
+import CustomGredient from "../components/CustomGredient";
 import Icon from "../components/Icon";
 import ListItem from "../components/ListItem";
 import ListItemSeparator from "../components/ListItemSeparator";

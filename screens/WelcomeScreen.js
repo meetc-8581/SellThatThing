@@ -3,7 +3,7 @@ import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import colors from "../config/colors";
 import AppButton from "../components/AppButton";
-import CustomGredient from "../components/CustomGredient/CustomGredient";
+import CustomGredient from "../components/CustomGredient";
 
 function WelcomeScreen() {
   return (
