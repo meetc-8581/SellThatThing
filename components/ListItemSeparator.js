@@ -7,7 +7,14 @@ function ListItemSeparator() {
 }
 
 const styles = StyleSheet.create({
-  separator: { width: "100%", height: 1, backgroundColor: colors.lightGrey },
+  separator: {
+    width: "100%",
+    height: 1,
+    backgroundColor: colors.mediumGrey,
+    marginHorizontal: "1.5%",
+    width: "97%",
+    alignItems: "center",
+  },
 });
 
 export default ListItemSeparator;

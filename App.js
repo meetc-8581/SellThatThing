@@ -1,7 +1,10 @@
 import { StyleSheet, View } from "react-native";
+import AppText from "./components/AppText/AppText";
 import Card from "./components/Card";
+import Icon from "./components/Icon";
 import ListingDetailsScreen from "./screens/ListingDetailsScreen";
 import MessagesScreen from "./screens/MessagesScreen";
+import Screen from "./screens/Screen";
 import ViewImageScreen from "./screens/ViewImageScreen";
 // import ViewImageScreen from "./screens/ViewImageScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
@@ -11,7 +14,9 @@ export default function App() {
     // // <WelcomeScreen />
     // // <View style={styles.container}>
     //   {/* <View style={{backgroundColor}} */}
-    <MessagesScreen />
+    <Screen>
+      <Icon name="email" size={100} backgroundColor="red" iconColor="white" />
+    </Screen>
     // </View>
   );
 }

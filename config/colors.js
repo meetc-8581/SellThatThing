@@ -5,10 +5,12 @@ const colors = {
   accent: "#3685B5",
   darkAccent: "#061826",
   background: "#f8f4f4",
+  backgroundLight: "#ffe29310",
   white: "#fff",
   black: "#000",
   mediumGrey: "#6e6969",
   lightGrey: "#f8f4f4",
+  danger: "#ff5252",
 
   // primary: "#0471A6",
   // secondary: "#FF8599",

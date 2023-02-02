@@ -7,6 +7,7 @@ function Screen({ children }) {
     <SafeAreaView
       style={{
         paddingTop: Constants.statusBarHeight,
+        flex: 1,
       }}
     >
       {children}
