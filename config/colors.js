@@ -7,7 +7,8 @@ const colors = {
   background: "#f8f4f4",
   white: "#fff",
   black: "#000",
-  medium: "#6e6969",
+  mediumGrey: "#6e6969",
+  lightGrey: "#f8f4f4",
 
   // primary: "#0471A6",
   // secondary: "#FF8599",
